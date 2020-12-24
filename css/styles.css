@@ -1,0 +1,153 @@
+@import "https://fonts.googleapis.com/css?family=Raleway:wght@100";
+
+/* Follow the instructions
+
+    1. Use the font family : "Raleway", Arial, Helvetica, sans-serif;
+    2. Background color : #5385c1
+    3. Text color : #fff
+
+
+*/
+
+body {
+    display: block;
+    margin: 8px;
+    background-color: #5385c1;
+    color: #b6cbe5;
+    text-align: center;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+
+/* Team Member CSS 
+===========================*/
+
+h1.team-h1 {
+    margin: 0 0 20px 0;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 100;
+}
+
+p.spirit {
+    font-weight: 100;
+    font-size: 18px;
+}
+
+.cf:before,
+.cf:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+
+/**
+   * For IE 6/7 only
+   * Include this rule to trigger hasLayout and contain floats.
+   */
+
+.cf {
+    *zoom: 1;
+}
+
+.team-container {
+    max-width: 1000px;
+    margin: auto;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    margin-top: 3em;
+    position: relative;
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+}
+
+.team-member {
+    min-width: 22%;
+    float: left;
+    text-align: center;
+    margin-right: 8%;
+    padding: 8% 20px;
+    border: 1px #6f95db solid;
+}
+
+.team-member:last-child {
+    margin-right: 0;
+}
+
+.team-member span,
+.team-member p {
+    max-width: 200px;
+    font-weight: 100;
+    padding: 0;
+}
+
+.team-member p {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.team-member span {
+    display: block;
+    margin-bottom: 25px;
+}
+
+a {
+    color: #b6cbe5;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.team-photo {
+    border-radius: 50%;
+    text-align: center;
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+    transition: 0.1s transform ease-in-out;
+}
+
+.team-photo:hover {
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+
+/* code for phone layout */
+
+@media (max-width:850px) {
+    .team-member {
+        width: 25%;
+        margin-left: 4%;
+        margin-right: 4%;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width:650px) {
+    .team-member {
+        float: none;
+        display: block;
+        margin: 50px auto;
+        width: 100%;
+        text-align: center;
+    }
+    .team-member h3,
+    .team-member span {
+        margin: 15px auto;
+    }
+}
+
+
+/* ENDS Team Member CSS 
+  ===========================*/
